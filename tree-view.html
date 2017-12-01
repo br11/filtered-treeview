@@ -1,0 +1,161 @@
+
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>TreeView</title>
+
+    <link href="css/metro.css" rel="stylesheet">
+    <link href="css/metro-icons.css" rel="stylesheet">
+    <link href="css/metro-responsive.css" rel="stylesheet">
+    <link href="css/metro-schemes.css" rel="stylesheet">
+
+    <link href="css/docs.css" rel="stylesheet">
+
+    <script src="js/jquery-2.1.3.min.js"></script>
+    <script src="js/metro.js"></script>
+    <script src="js/docs.js"></script>
+
+    <script src="js/ga.js"></script>
+
+</head>
+
+<body>
+	<br/>
+	<div>
+		<br/>
+        <div class="example" data-text="example">
+			<br/>
+			Filtros &nbsp;&nbsp;&nbsp;
+			<input type="text" placeholder="Regional" style="width: 150px;"> &nbsp;&nbsp;&nbsp;
+			<input type="text" placeholder="Administração" style="width: 150px;">&nbsp;&nbsp;&nbsp;
+			<input type="text" placeholder="Setor" style="width: 150px;">
+			<br/>
+            <div class="grid">
+                <div class="row cells3">
+
+                    <div class="cell">
+                        <h5>CCB</h5>
+						<div style="width:700px; height:250px; overflow: auto;">
+                        <div class="treeview" data-role="treeview">
+                            <ul>
+                                <li class="node" data-mode="checkbox" data-name="c0">
+                                    <span class="leaf">Reginal São Paulo</span>
+                                    <span class="node-toggle"></span>
+                                    <ul>
+                                        <li data-mode="checkbox" data-name="c1" class="node">
+                                            <span class="leaf">Administração São Paulo</span>
+                                            <span class="node-toggle"></span>
+                                            <ul>
+                                                <li data-mode="checkbox" data-name="c1_1">
+                                                    <span class="leaf">Setor Brás</span>
+                                                </li>
+                                                <li data-mode="checkbox" data-name="c1_1">
+                                                    <span class="leaf">Setor Leste</span>
+                                                </li>
+                                                <li data-mode="checkbox" data-name="c1_2">
+                                                    <span class="leaf">Setor Oeste</span>
+                                                </li>
+                                                <li data-mode="checkbox" data-name="c1_3">
+                                                    <span class="leaf">Setor Norte</span>
+                                                </li>
+                                                <li data-mode="checkbox" data-name="c1_3">
+                                                    <span class="leaf">Setor Sul</span>
+                                                    <span class="node-toggle"></span>
+                                                    <ul>
+                                                        <li data-mode="checkbox" data-name="c2_3_1">
+                                                            <span class="leaf">Casa de Oração 1</span>
+                                                        </li>
+                                                        <li data-mode="checkbox" data-name="c2_3_2">
+                                                            <span class="leaf">Casa de Oração 2</span>
+                                                        </li>
+                                                        <li data-mode="checkbox" data-name="c2_3_3">
+                                                            <span class="leaf">Casa de Oração 3</span>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="node" data-mode="checkbox" data-name="c0" style="display:none;">
+                                    <span class="leaf">Reginal ABCDMRR</span>
+                                    <span class="node-toggle"></span>
+                                    <ul>
+                                        <li data-mode="checkbox" data-name="c1" class="node">
+                                            <span class="leaf">Administração Santo André</span>
+                                        </li>
+                                        <li data-mode="checkbox" data-name="c1" class="node">
+                                            <span class="leaf">Administração Santo Bernardo do Campo</span>
+                                        </li>
+                                        <li data-mode="checkbox" data-name="c1" class="node">
+                                            <span class="leaf">Administração São Caetano do Sul</span>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="node" data-mode="checkbox" data-name="c0">
+                                    <span class="leaf">Reginal AAAAAAAAAAAAA</span>
+                                    <span class="node-toggle"></span>
+                                    <ul>
+                                        <li data-mode="checkbox" data-name="c1" class="node">
+                                            <span class="leaf">Administração A1</span>
+                                        </li>
+                                        <li data-mode="checkbox" data-name="c1" class="node">
+                                            <span class="leaf">Administração A2</span>
+                                        </li>
+                                        <li data-mode="checkbox" data-name="c1" class="node">
+                                            <span class="leaf">Administração A3</span>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="node" data-mode="checkbox" data-name="c0">
+                                    <span class="leaf">Reginal BBBBBBBBBBBBBB</span>
+                                    <span class="node-toggle"></span>
+                                    <ul>
+                                        <li data-mode="checkbox" data-name="c1" class="node">
+                                            <span class="leaf">Administração B1</span>
+                                        </li>
+                                        <li data-mode="checkbox" data-name="c1" class="node">
+                                            <span class="leaf">Administração B2</span>
+                                        </li>
+                                        <li data-mode="checkbox" data-name="c1" class="node">
+                                            <span class="leaf">Administração B3</span>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="node" data-mode="checkbox" data-name="c0">
+                                    <span class="leaf">Reginal CCCCCCCCCCCCCCCC</span>
+                                    <span class="node-toggle"></span>
+                                    <ul>
+                                        <li data-mode="checkbox" data-name="c1" class="node">
+                                            <span class="leaf">Administração C1</span>
+                                        </li>
+                                        <li data-mode="checkbox" data-name="c1" class="node">
+                                            <span class="leaf">Administração C2</span>
+                                        </li>
+                                        <li data-mode="checkbox" data-name="c1" class="node">
+                                            <span class="leaf">Administração C3</span>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                            </ul>
+                        </div>
+						</div>
+						
+                    </div>
+			
+                    <div class="cell"></div>
+                    <div class="cell"></div>					
+                </div>
+            </div>
+        </div> <!-- End of example -->
+	</div>
+</body>
+</html>
